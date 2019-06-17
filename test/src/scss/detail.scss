@@ -1,0 +1,124 @@
+@import "@/static/_minix.scss";
+@import "@/static/common.scss";
+.wrap {
+  overflow: hidden;
+  header {
+    @include box_flex;
+    background: #006341;
+    color: #fff;
+    .cc {
+      width: pxTorem(80px);
+      height: pxTorem(44px);
+    }
+  }
+  .header {
+    width: 100%;
+    height: pxTorem(130px);
+    background: #006341;
+    @include box_flex;
+    margin-top: -1px;
+    .pic {
+      width: 10%;
+      height: pxTorem(40px);
+      background: pink;
+      border-radius: pxTorem(20px);
+      margin: pxTorem(25px) 5%;
+    }
+    .name,
+    .long {
+      width: 25%;
+      height: 100%;
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+      span {
+        display: block;
+        line-height: pxTorem(30px);
+        color: white;
+      }
+      span:nth-child(1) {
+        margin-top: 13%;
+      }
+    }
+  }
+  .count {
+      margin-top: -8%;
+      overflow: scroll;
+      z-index: 99;
+      flex:1;
+    .det {
+      width: 90%;
+      height: pxTorem(300px);
+      background: white;
+      margin-left: 5%;
+      border-radius: pxTorem(15px);
+      box-shadow: 1px 1px 4.5px 1.5px#ccc;
+      padding: 0 pxTorem(10px);
+      @include sizing;
+      h5 {
+        line-height: pxTorem(44px);
+      }
+      p {
+        line-height: pxTorem(44px);
+        border-bottom: 1px solid #ccc;
+        color:#666;
+        @include box_flex;
+        @include justify(space-between);
+      }
+    }
+    .yuanyin {
+      width: 90%;
+      height: pxTorem(100px);
+      background: white;
+      margin-left: 5%;
+      margin-top: 3%;
+      border-radius: pxTorem(15px);
+      padding: 0 pxTorem(10px);
+      @include sizing;
+      box-shadow: 1px 1px 4.5px 1.5px#ccc;
+    }
+  }
+
+  .fujian {
+    width: 90%;
+    // height: pxTorem(50px);
+    background: white;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: pxTorem(15px);
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    box-shadow: 1px 1px 4.5px 1.5px#ccc;
+    div {
+      img {
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    height: pxTorem(44px);
+    background: white;
+    margin-top: 3%;
+    border-radius: pxTorem(15px);
+    font-size: pxTorem(16px);
+    @include box_flex;
+    .cancle {
+      width: 40%;
+      border: none;
+      line-height: pxTorem(44px);
+      text-align: center;
+      color: #006341;
+      font-size: pxTorem(15px);
+      background: white;
+    }
+    .submit {
+      width: 60%;
+      border: none;
+      line-height: pxTorem(44px);
+      text-align: center;
+      background: #006341;
+      color: white;
+      font-size: pxTorem(15px);
+    }
+  }
+}
